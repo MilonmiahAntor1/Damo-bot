@@ -1,0 +1,51 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: radial-gradient(circle at top, #1b2b52, #050b1a);
+  font-family: Arial, sans-serif;
+  color:#fff;
+}
+
+.game{
+  text-align:center;
+}
+
+.coins{
+  font-size:24px;
+  margin-bottom:30px;
+}
+
+.tap-area{
+  perspective:1000px;
+}
+
+.tap-btn{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background: linear-gradient(145deg, #3fa9ff, #0057ff);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:48px;
+  font-weight:bold;
+  color:#fff;
+  cursor:pointer;
+
+  box-shadow:
+    0 18px 0 #003db8,
+    0 25px 40px rgba(0,0,0,0.6);
+
+  transform-style:preserve-3d;
+  transition: all 0.08s ease;
+}
+
+.tap-btn:active{
+  transform: translateY(12px);
+  box-shadow:
+    0 6px 0 #003db8,
+    0 10px 20px rgba(0,0,0,0.6);
+}
